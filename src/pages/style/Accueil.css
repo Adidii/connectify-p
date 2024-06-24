@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Chicle&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gravitas+One&display=swap');
+
+.accueil-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.video-background {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 83%;
+  object-fit: cover;
+}
+
+.video-background2 {
+  position: absolute;
+
+  left: 0;
+  width: 100%;
+  height: 80%;
+  margin-top: 0px;
+  object-fit: cover;
+}
+
+.message-input {
+  background-color: white;
+
+}
+
+.navbar-container {
+  position: absolute;
+  top: 20px;
+  /* Ajustez la valeur selon vos besoins */
+  right: 20px;
+  /* Ajustez la valeur selon vos besoins */
+  z-index: 2;
+  /* Pour afficher la barre de navigation au-dessus de la vidéo */
+}
+
+.navbar {
+  background-color: transparent;
+  /* Fond de la barre de navigation avec transparence */
+  padding: 0px 20px;
+  border-radius: 5px;
+  width: 1100px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.navbar li:last-child {
+  margin-right: 0;
+  /* Pour supprimer la marge à droite du dernier élément */
+}
+
+.navbar li a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar li a:hover {
+  color: yellow;
+  /* Couleur jaune au survol */
+}
+
+.header-container {
+  position: relative;
+  height: 80vh;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1;
+  color: white;
+}
+
+.video-overlay2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.main-title {
+  font-family: 'Chicle', cursive;
+  font-size: 98px;
+  color: rgba(255, 255, 0, 0.8);
+  /* Jaune avec une opacité de 0.8 */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.contact-form-container {
+  flex: 1;
+  max-width: calc(50% - 0px);
+  margin-top: -60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.body-container {
+  position: relative;
+  height: 80vh;
+  background-color: yellow;
+}
+
+.video-overlay {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.yellow-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 0, 0.5);
+  /* Fond jaune avec transparence */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.message-input {
+  width: 40px;
+}
+
+#welcome-text {
+  font-size: 50px;
+  margin-left: 30px;
+}
+
+.newsletter-button {
+  margin-left: 140px;
+}
+
+.subtitle {
+  font-family: inter;
+  font-size: 30px;
+  color: white;
+  margin-top: 60px;
+  margin-left: 30px;
+}
+
+.photo-section {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+  height: 400px;
+  background-color: green;
+}
+
+.photo-container,
+.text-container {
+  flex: 1;
+  max-width: calc(50% - 0px);
+  margin: 0;
+}
+
+.photo-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.text-container {
+  background-color: green;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+}
+
+.title {
+  font-size: 24px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.text {
+  font-size: 26px;
+  color: white;
+  display: flex;
+  align-items: center;
+  margin: 50px;
+  margin-top: 40px;
+
+}
+
+.contactFF {
+
+  margin-left: -130px;
+}
+
+.titleactu {
+  text-align: center;
+  margin-top: 60px;
+  margin-left: 30px;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: green;
+  /* Couleur de fond verte */
+  color: white;
+  /* Couleur du texte blanc */
+  padding: 20px 0;
+  /* Espacement intérieur */
+  margin-top: -90px;
+  height: 87px;
+}
+
+.form-control {
+  width: 300px;
+}
+
+.footer p {
+  margin-left: 370px;
+  font-size: 30px;
+  margin-top: 30px;
+}
+
+@media (max-width: 932px) {
+  .body-container {
+    height: 40vh;
+    /* Réduire la hauteur de la section de la deuxième vidéo à 50% de la hauteur de la vue */
+  }
+
+  .contact-form-container {
+    flex: 1;
+    max-width: calc(40% - 10px);
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar-container {
+    position: fixed;
+    /* Rendre la barre de navigation fixe */
+    margin-left: -1000px;
+  }
+
+  .main-title {
+    font-size: 58px;
+    /* Réduire la taille de la police du titre principal */
+  }
+
+  #welcome-text {
+    font-size: 30px;
+    /* Réduire la taille de la police du texte de bienvenue */
+  }
+
+  .subtitle {
+    font-size: 15px;
+    /* Réduire la taille de la police du sous-titre */
+    margin-top: 30px;
+    /* Réduire l'écart supérieur du sous-titre */
+  }
+
+  .photo-section {
+    flex-direction: column;
+    /* Mettre en colonne pour les petits écrans */
+    height: 700px;
+    /* Hauteur automatique pour s'adapter au contenu */
+    background-color: green;
+  }
+
+  .photo-container {
+    max-width: 100%;
+    /* Assurer que chaque conteneur occupe toute la largeur disponible */
+    margin: 0px 0;
+    /* Ajouter une marge autour des conteneurs pour les espacer */
+    height: 400px;
+    order: 2;
+    /* Déplacer la photo en bas */
+  }
+
+  .text-container {
+    max-width: 100%;
+    /* Assurer que chaque conteneur occupe toute la largeur disponible */
+    order: 1;
+    /* Déplacer le texte en haut */
+  }
+
+  .photo3 {
+    display: none;
+  }
+
+  .footer {
+    background-color: green;
+    color: white;
+    margin-bottom: 0px;
+    height: 140px;
+  }
+
+  .newsletter-form {
+    width: 300px;
+  }
+
+  .newsletter-button {
+    margin-left: 90px;
+  }
+
+  .footer p {
+    margin-top: 60px;
+    margin-left: 40px;
+    font-size: 17px
+  }
+
+  .video-overlay2 {
+    position: relative;
+    width: 100%;
+    height: 180%;
+    overflow: hidden;
+    margin-bottom: -560px;
+
+  }
+}

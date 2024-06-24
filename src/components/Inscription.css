@@ -1,0 +1,218 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  /* Empêche le défilement horizontal */
+}
+
+
+.signup-page {
+  margin-top: 60px;
+  /* Ajustez la marge supérieure pour laisser de l'espace pour la barre de navigation */
+  position: relative;
+  height: calc(100vh - 60px);
+  /* Ajustez la hauteur de la grande section en tenant compte de la hauteur de la barre de navigation */
+}
+
+.signup-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: calc(100% - 60px);
+  /* Utilisez calc() pour soustraire la hauteur de la barre de navigation */
+  padding-top: 60px;
+  /* Ajoutez la hauteur de la barre de navigation comme marge supérieure */
+}
+
+.photo-side-renamed,
+.form-side-renamed {
+  flex: 1;
+  height: 100%;
+  margin-top: -280px;
+}
+
+.photo-side-renamed img {
+  width: 100%;
+  height: 700px;
+  margin-top: 18px;
+}
+
+.form-side-renamed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: -198px;
+  background-color: #4ad609;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 700px;
+}
+
+form {
+  background-color: #188422;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 400px;
+  width: 78%;
+  margin-top: 80px;
+  height: 500px;
+  margin-left: 20px;
+}
+
+label-renamed {
+  display: block;
+  margin-bottom: 9px;
+  color: #fff;
+}
+
+.input-field-renamed,
+.textarea-field-renamed {
+  display: block;
+  width: 80%;
+  padding: 12px;
+  margin-left: 25px;
+  margin-bottom: -10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  color: #283909;
+  height: 7px;
+}
+
+button[type="submit"] {
+  background-color: #e8f80d;
+  border: none;
+  border-radius: 4px;
+  color: #080808;
+  cursor: pointer;
+  padding: 5px;
+  width: 60%;
+  margin-left: 10px;
+  margin-top: 15px;
+  height: 30px;
+}
+
+button[type="submit"]:hover {
+  background-color: #f6890d;
+}
+
+p {
+  margin-top: 18px;
+  font-size: 16px;
+  text-align: center;
+}
+
+p a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+.box-renamed {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  width: 320px;
+  margin-left: 30px;
+  height: 70px;
+}
+
+.contact {
+  margin-left: 70px;
+  margin-bottom: 6cqw;
+}
+
+.box-renamed input[type="text"] {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.box-renamed input[type="text"]:last-child {
+  margin-right: 30px;
+}
+
+.box-renamed input[type="radio"] {
+  margin-left: 20px;
+  width: 51px;
+  height: 15px;
+  margin-right: -110px;
+}
+
+.box-renamed label-renamed {
+  margin-left: 5px;
+  margin-bottom: 0;
+}
+
+.box-renamed input[type="radio"]+label-renamed {
+  margin-left: 0;
+  /* Réinitialiser la marge pour les étiquettes de boutons radio */
+  margin-right: 20px;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: green;
+  /* Couleur de fond verte */
+  color: white;
+  /* Couleur du texte blanc */
+  margin-top: -119px;
+  height: 200px;
+}
+
+.footer p {
+  margin-left: 20px;
+  font-size: 25px;
+  margin-top: 40px;
+}
+
+.title-renamed {
+  color: #e7f60d;
+  margin-top: 80px;
+  font-family: 'Gravitas One', cursive;
+  font-size: 16px;
+  margin-bottom: -60px;
+  margin-left: 150px;
+}
+
+@media (max-width: 932px) {
+  .signup-container {
+    flex-direction: column;
+    height: 1200px;
+    margin-top: -510px;
+  }
+
+  .form-side-renamed {
+    width: 100%;
+    background-image: url("../Assets/fd_qsn.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .footer {
+    background-color: green;
+    /* Couleur de fond verte */
+    color: white;
+    /* Couleur du texte blanc */
+    margin-top: 380px;
+    /* Ajustez la marge supérieure */
+  }
+
+  .footer p {
+    margin-left: 20px;
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  p {
+    color: white;
+  }
+}

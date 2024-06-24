@@ -1,0 +1,84 @@
+.newsletter-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+  }
+  
+  .newsletter-frame {
+    position: relative;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Noir transparent */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .newsletter-frame h2 {
+    margin: 0 0 10px;
+    font-family: 'Gravitas One, sans-serif';
+    color: #FFC300;
+    font-size: 45px;
+  }
+  
+  .newsletter-frame h3 {
+    margin: 0 0 10px;
+    font-family: 'Gravitas One, sans-serif';
+  
+  }
+  
+  .newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .newsletter-form input {
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .newsletter-button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #FFD700;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .newsletter-section {
+    position: relative;
+    /* ou position: static; */
+    /* autres propriétés CSS pour cette section */
+  }
+  
+  .newsletter-button:hover {
+    background-color: #FFC300;
+  }
